@@ -106,7 +106,7 @@ argument-hint: "<你的想法或需求描述>"
 1. 展示完整需求文档
 2. 询问用户确认："以上需求理解是否准确？"
 3. 如有修改，更新并重新确认
-4. 确认后写入 `.workbuddy/specs/hc1-{timestamp}.md`
+4. 确认后写入 `.droid/specs/hc1-{timestamp}.md`
 
 **歧义度卡在 20%-40% 超过 5 轮不降：**
 

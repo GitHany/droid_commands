@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+mkdir -p .droid/specs
+
 ---
 description: 基于需求文档执行实现、测试、调试和反馈的完整流程
 argument-hint: "<需求文档路径或直接描述>"
@@ -77,7 +81,7 @@ argument-hint: "<需求文档路径或直接描述>"
 
 ### Phase 1: 读取与分解
 
-1. **读取需求文档** — 从 `.workbuddy/specs/hc1-*.md` 或用户指定路径
+1. **读取需求文档** — 从 `.droid/specs/hc1-*.md` 或用户指定路径
 2. **恢复技术上下文** — 如果需求文档包含"技术上下文"部分，从中提取代码结构理解，减少重复探索；如果本会话内未读过相关代码且技术上下文不足以支撑实现，再派发 codebase-explorer 补充探索
 3. **汇总代理探索结果**（如有）
 4. **创建 TodoWrite** — 列出所有任务
